@@ -1,0 +1,19 @@
+{
+    "name": "write-db/write-db",
+    "description": "Test task",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shevchukroma",
+            "email": "shevchuk.roma2@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Libs\\": "libs/"
+        }
+    }
+}
