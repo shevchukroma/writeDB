@@ -13,6 +13,8 @@ foreach ($countries as $country) {
     $values .= '(\'' . $country['sortname'] . '\', \'' . $country['name'] . '\', \'' . $country['phone_code'] . '\'), ';
 }
 
+echo ($countries['1']['id']);
+
 $values = rtrim($values, ', ');
 
 
