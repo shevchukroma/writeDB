@@ -10,7 +10,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": ">=7.2",
+        "ext-pdo": "*"
+    },
     "autoload": {
         "psr-4": {
             "Libs\\": "libs/"

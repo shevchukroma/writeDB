@@ -10,7 +10,7 @@
 
     echo '<tr><td>id</td><td>sort-name</td><td>name</td><td>phone code</td><td>Action</td></tr>';
 
-    $getData = $connection->prepare("SELECT * FROM countries ORDER BY id DESC");
+    $getData = $connection->prepare("SELECT * FROM countries");
     $getData->execute();
     $data = $getData->fetchAll();
     foreach ($data as $country) {

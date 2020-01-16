@@ -25,12 +25,12 @@ class Db
                     ]
                 )
                 ) {
-                    throw new Exception('Помилка підключення до бази даних.');
+                    echo 'Помилка підключення до бази даних.';
                 }
                 return $connection;
             }
         } catch (\PDOException $e) {
-            throw new Exception($e->getMessage());
+            echo $e->getMessage();
         }
     }
 
