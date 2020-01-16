@@ -14,7 +14,8 @@
     $getData->execute();
     $data = $getData->fetchAll();
     foreach ($data as $country) {
-        echo '<tr>' . '<td>' . $country['id'] . '</td>' . '<td>' . $country['sortname'] . '</td>' . '<td>' . $country['name'] . '</td>' . '<td>' . $country['phone_code'] . '</td>' . '<td><a href="form.php?id=' . $country['id'] . '">update</a></a></td>';
+        echo '<tr>' . '<td>' . $country['id'] . '</td>' . '<td>' . $country['sortname'] . '</td>' . '<td>' . $country['name'] . '</td>' . '<td>' . $country['phone_code'] . '</td>' . '<td><a href="form.php?id=' . $country['id'] . '">update</a> ' . '<a href="delete.php?id=' . $country['id'] .
+            '">delete</a></td>';
     }
     ?>
 </table>

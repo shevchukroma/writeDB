@@ -27,10 +27,11 @@ if (!empty($countryId)) {
 }
 ?>
 
-<form action="create.php" method="post">
+<form action="<?= (!empty($countryId)) ? 'update.php' : 'create.php' ?>" method="post">
     Sortname: <input type="text" name="sortname" required value="<?= $sortname; ?>"><br>
     Name: <input type="text" name="name" required value="<?= $name; ?>"><br>
     Phone code <input type="text" name="phone_code" required value="<?= $phone_code; ?>"><br>
+    <input type="hidden" value="<?= (!empty($countryId)) ? $countryId : '' ?>" name="country_id">
     <button type="submit">SEND DATA</button>
     <a href="index.php">CANCEL</a>
 </form>
